@@ -31,14 +31,6 @@ let package = Package(
                 .copy("Resources/PrivacyInfo.xcprivacy"),
             ]
         ),
-        .target(
-            name: "phlibwebp",
-            path: "vendor/libwebp",
-            publicHeadersPath: ".",
-            cSettings: [
-                .headerSearchPath("."),
-            ]
-        ),
         .testTarget(
             name: "PostHogTests",
             dependencies: [
